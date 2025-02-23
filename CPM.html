@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hálótervezés - CPM</title>
+</head>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .container {
+        width: 560px;
+        height: 793px;
+        background-color: rgb(222, 222, 222);
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+    }
+    h1, h2 {
+        color: #333;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    #jobb{
+        float: right;
+    }
+    #left{
+        float: left;
+    }
+    </style>
+    <body>
+        <div class="container">
+            <h5>Debreceni SZC Mechwart András Gépipari és Informatikai Technikum<br>Készült: IKT - projektmunka órára<br>Készítette: Balássy Bence</h5>
+            <h1>Hálótervezés - CPM</h1>
+            <h3>A hálótervezés előnyei</h3>
+            <p>A bonyolult, nehezen áttekinthető folyamatokat, folyamatrendszereket irányítani, szervezni, áttekinteni, ellenőrizni a hálódiagramos módszerek alkalmazása nélkül ma már szinte elképzelhetetlen.</p>
+            <h3>A CPM háló elemei</h3>
+            <p><strong>Tevékenység:</strong> Egy-egy részfeladatot a hálóban tevékenységnek nevezünk. Ezért szokták a CPM-hálót tevékenységre orientált hálótervnek is nevezni. Mindig van időtartama, erőforrásigénye van, és egyik eseménytől a másikig tart.</p>
+            <p><strong>Esemény:</strong> Azokat a pontokat, amelyek a tevékenység kezdő és befejező határát jelzik, eseménynek nevezzük. Mindig egy adott időpontot jelöl, és nincs erőforrásigénye.</p>
+            <p><strong>Látszattevékenység:</strong> Nem igényel időt vagy erőforrást, csupán a logikai összefüggést, kapcsolatot fejez ki.</p>
+            <h3>Szerkesztési szabályok</h3>
+            <ul>
+                <li>Két eseményt csak egy tevékenység köthet össze.</li>
+                <li>Amennyiben egy esemény bekövetkezésével két tevékenység indulhat el, de mindkettő befejeződése szükséges egy harmadik tevékenység elkezdéséhez, egy látszattevékenységet kell beiktatni.</li>
+                <li>A háló hurokmentes legyen.</li>
+                <li>Az események számozása növekvő legyen.</li>
+                <li>A háló időben összefüggő és irányfolyamatos legyen.</li>
+            </ul>
+            <h3>Tevékenységtáblázat</h3>
+            <table border="1" cellpadding="5">
+                <p>0 | 0 → 1 | 2 (A)</p>
+                <p>2 | 0 → 3 | 4 (B)</p>
+                <p>3 | 4 → 4 | 4 (C)</p>
+            </table>
+            <p>Forrás: <a href="https://www.mateking.hu/diszkret-matematika/halozatok/cpm-es-pert-kritikus-ut">Mateking</a></p>
+            <br>
+            <p id="jobb">Készült: Debrecen, 2024. február 16.</p>
+            <p id="bal">Balássy Bence</p>
+        </div>
+    </body>
+</html>
