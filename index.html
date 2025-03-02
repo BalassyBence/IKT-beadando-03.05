@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hálótervezés - CPM</title>
+    <link rel="stylesheet" href="MPM.css">
+</head>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .container {
+        width: 560px;
+        height: 793px;
+        background-color: rgb(222, 222, 222);
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+    }
+    h1, h2 {
+        color: #333;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    #jobb{
+        float: right;
+    }
+    #left{
+        float: left;
+    }
+    </style>
+    <body>
+        <div class="container">
+            <h5>Debreceni SZC Mechwart András Gépipari és Informatikai Technikum<br>Készült: IKT - projektmunka órára<br>Készítette: Balássy Bence</h5>
+            <h1>Hálótervezés - MPM</h1>
+            <h3>Az MPM háló jellemzői</h3>
+            <p>Az MPM (Metra Potential Method) háló tevékenység-csomópontú, legfontosabb elemei a csomóponthoz rendelt tevékenységek és az éleken jelölt kapcsolatok.</p>
+            <p>A tevékenységek közötti élek nyíllal irányítottak, a kapcsolatokat a nyilakon tüntetjük fel.</p>
+            <h3>Kapcsolatok</h3>
+            <ul>
+                <li><strong>Vége – Kezdet kapcsolat (VK(t)):</strong> A követő tevékenység meghatározott idővel a megelőző tevékenység vége után kezdődik.</li>
+                <li><strong>Kezdet – Kezdet kapcsolat (KK(t)):</strong> A követő tevékenység kezdési ideje a megelőző tevékenység kezdetétől függ.</li>
+                <li><strong>Vége – Vége kapcsolat (VV(t)):</strong> A tevékenységek befejezése közötti minimális időköz biztosítása.</li>
+            </ul>
+            <h3>MPM háló készítése - Tevékenységtáblázat</h3>
+            <table border="1" cellpadding="5">
+                <tr>
+                    <th>Tevékenység</th>
+                    <th>Idő</th>
+                </tr>
+                <tr>
+                    <th>Legkorábbi kezdet</th>
+                    <th>Legkésőbbi kezdet</th>
+                </tr>
+            </table>
+            <p>Forrás: <a href="https://www.oplit.com/en/articles/la-methode-des-potentiels-metra-mpm">MPM módszer</a></p>
+            <p id="jobb">Készült: Debrecen, 2024. február 16.</p>
+            <p id="bal">Balássy Bence</p>
+        </div>
+    </body>
+</html>
